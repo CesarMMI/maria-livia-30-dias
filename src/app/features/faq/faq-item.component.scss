@@ -1,0 +1,17 @@
+.item {
+	overflow: hidden;
+	max-height: 0;
+	transition: max-height 0.5s cubic-bezier(0, 1, 0, 1);
+	
+	&.active {
+		max-height: 200px;
+		transition: max-height 1s ease-in-out;
+	}
+}
+
+fa-icon {
+	transition: transform 0.2s ease-in-out;
+}
+fa-icon.active {
+	transform: rotateX(180deg);
+}
