@@ -26,19 +26,23 @@ import { InViewDirective } from '../../shared/in-view.directive';
 export class FaqComponent {
 	items: { question: string; answer: string }[] = [
 		{
-			question: 'Lorem ipsum dolor sit amet ?',
+			question: 'Para quem é indicado o treinamento de 30 dias?',
 			answer:
-				'Praesent dictum, tortor quis faucibus dictum, ex leo commodo libero, vitae sagittis augue est ac velit. Duis tortor orci, finibus condimentum tellus in, viverra consectetur ipsum. ',
+				'Esse treinamento é indicado para qualquer pessoa que deseja melhorar sua forma física, ganhar mais energia e adotar hábitos saudáveis, independentemente do nível atual de condicionamento.',
 		},
 		{
-			question: 'Proin venenatis ligula justo ?',
-			answer:
-				'Praesent dictum, tortor quis faucibus dictum, ex leo commodo libero, vitae sagittis augue est ac velit. Duis tortor orci, finibus condimentum tellus in, viverra consectetur ipsum. ',
+			question: 'Como recebo acesso ao treinamento?',
+			answer: 'Após a compra, todo o conteúdo do treinamento será disponibilizado diretamente na plataforma MfitPersonal.',
 		},
 		{
-			question: 'Ut massa augue, sagittis ut ante eu?',
+			question: 'O que inclui o treinamento?',
 			answer:
-				'Praesent dictum, tortor quis faucibus dictum, ex leo commodo libero, vitae sagittis augue est ac velit. Duis tortor orci, finibus condimentum tellus in, viverra consectetur ipsum. ',
+				'Você terá aos nossos treinos personalizados, dicas alimentares e suporte exclusivo para ajudar na sua jornada.',
+		},
+		{
+			question: 'E se eu não conseguir acompanhar?',
+			answer:
+				'O treinamento é flexível! Você pode ajustar o ritmo conforme sua disponibilidade e condicionamento físico, garantindo que acompanhe no seu tempo.',
 		},
 	];
 }

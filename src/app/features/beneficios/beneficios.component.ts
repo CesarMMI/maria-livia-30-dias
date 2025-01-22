@@ -49,8 +49,8 @@ export class BeneficiosComponent {
 	sections: { justify?: 'start' | 'end'; icone: IconProp; titulo: string; descricao: string }[] = [
 		{
 			icone: faAppleWhole,
-			titulo: 'Nutrição Sob Medida para Você',
-			descricao: 'Receitas e cardápios adaptados ao seu gosto, rotina e objetivos.',
+			titulo: 'Transforme sua Alimentação',
+			descricao: 'Melhore sua alimentação com dicas práticas e uma nova receita semanal para inspirar suas refeições.',
 		},
 		{
 			justify: 'end',

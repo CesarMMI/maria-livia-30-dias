@@ -1,13 +1,15 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Component, inject, OnDestroy, OnInit } from '@angular/core';
 import { TextHighlightDirective } from '../../shared/text-highlight.directive';
 import { ActionButtonDirective } from '../../shared/action-button.directive';
 import { Subscription, interval } from 'rxjs';
+import { CountdownService } from './countdown.service';
+import { AsyncPipe } from '@angular/common';
 
 @Component({
 	selector: 'app-call-action',
-	imports: [TextHighlightDirective, ActionButtonDirective],
+	imports: [AsyncPipe, TextHighlightDirective, ActionButtonDirective],
 	template: `
-		<div class=" bg-neutral-900 h-full rounded-lg flex flex-col justify-between p-4 gap-8 max-w-xl mx-auto">
+		<div class=" bg-neutral-900 h-full rounded-lg flex flex-col justify-between p-4 pt-8 gap-8 max-w-xl mx-auto">
 			<span class="text-4xl font-bold text-center"
 				>A Decisão Que Vai<br /><span appTextHighlight>MUDAR SUA VIDA</span><br />Está a Um Clique!</span
 			>
@@ -23,9 +25,10 @@ import { Subscription, interval } from 'rxjs';
 			</div>
 			<div class="grid gap-2">
 				<span class="text-2xl text-center">De <span class="line-through font-bold">R$ 200,00</span> por apenas</span>
-				<span class="text-center">10x de <span appTextHighlight class="text-7xl">R$ 9,90</span></span>
-				<span class="text-2xl text-center">ou <span class="font-bold">R$ 99,00</span> à vista</span>
+				<span class="text-center text-neutral-400">10x de <span appTextHighlight class="text-7xl">R$ 6,99</span></span>
+				<span class="text-2xl text-center">ou <span class="font-bold">R$ 66,99</span> à vista</span>
 			</div>
+			@if(countdown$ | async; as countdown){
 			<div class="grid gap-2">
 				<span class="text-neutral-400 text-center">Tempo Restante</span>
 				<div class="flex items-center gap-3 justify-center font-bold">
@@ -36,6 +39,7 @@ import { Subscription, interval } from 'rxjs';
 					<div class="bg-neutral-950 p-4 rounded-lg text-3xl">{{ countdown.seconds }}</div>
 				</div>
 			</div>
+			}
 			<a appActionButton>COMECE SUA JORNADA!</a>
 		</div>
 	`,
@@ -49,6 +53,9 @@ import { Subscription, interval } from 'rxjs';
 	},
 })
 export class CallActionComponent implements OnInit, OnDestroy {
+	private countdownService = inject(CountdownService);
+
+	countdown$ = this.countdownService.countdown$;
 	countdown = { hours: '0', minutes: '0', seconds: '0' };
 
 	private targetDate = new Date('2025-01-21');
@@ -56,6 +63,7 @@ export class CallActionComponent implements OnInit, OnDestroy {
 
 	ngOnInit() {
 		this.startCountdown();
+		this.countdownService.startCountdown()
 	}
 
 	ngOnDestroy() {

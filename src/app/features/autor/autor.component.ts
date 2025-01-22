@@ -42,19 +42,19 @@ import { InViewDirective } from '../../shared/in-view.directive';
 					pessoas a transformarem suas rotinas com equilíbrio e motivação. Criadora do método do 30 dias, que já mudou
 					dezenas de vidas.
 				</p>
-				<div class="flex items-center justify-between">
-					<a class="text-xs flex gap-1" href="http://google.com.br" target="_blank">
+				<div class="flex items-center justify-end gap-4">
+					<a class="text-xs flex gap-1" href="https://www.instagram.com/liviasouzacrz/" target="_blank">
 						<fa-icon [icon]="iconInstagram" />
 						<span class="text-blue-300 underline">liviasouzacrz</span>
 					</a>
-					<a class="text-xs flex gap-1" href="http://google.com.br" target="_blank">
+					<!-- <a class="text-xs flex gap-1" href="http://google.com.br" target="_blank">
 						<fa-icon [icon]="iconWhatsapp" />
 						<span class="text-blue-300 underline">(11) 96637-4958</span>
 					</a>
 					<a class="text-xs flex gap-1" href="http://google.com.br" target="_blank">
 						<fa-icon [icon]="iconFacebook" />
 						<span class="text-blue-300 underline">liviasouzacrz</span>
-					</a>
+					</a> -->
 				</div>
 			</div>
 		</div>
@@ -68,7 +68,7 @@ import { InViewDirective } from '../../shared/in-view.directive';
 	styleUrl: './autor.component.scss',
 })
 export class AutorComponent extends CarouselDirective {
-	override items = ['images/autor.jpg', 'images/autor2.jpg', 'images/autor3.jpg'];
+	override items = ['images/autor3.jpg', 'images/autor1.jpg', 'images/autor2.jpg'];
 	iconInstagram = faInstagram;
 	iconWhatsapp = faWhatsapp;
 	iconFacebook = faFacebook;

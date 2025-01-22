@@ -9,12 +9,13 @@ import { InViewDirective } from '../../shared/in-view.directive';
 	hostDirectives: [InViewDirective],
 	template: `
 		<div class="content grid gap-4 p-8 bg-neutral-900 max-w-5xl mx-auto">
-			<span class="text-center ">NÃO ADIE O FUTURO QUE <span class="font-bold">VOCÊ MERECE!</span></span>
-			<div class="grid">
+			<span class="text-center">NÃO ADIE O FUTURO QUE <span class="font-bold">VOCÊ MERECE!</span></span>
+			<div class="grid gap-1">
 				<span class="text-center text-sm"
-					>de <span class="text-base font-semibold line-through">R$ 200,00</span> por apenas</span
+					>De <span class="text-base font-semibold line-through">R$ 200,00</span> por apenas</span
 				>
-				<span class="text-center text-2xl" appTextHighlight>R$ <span class="text-7xl">99,00</span></span>
+				<span class="text-center text-neutral-400">10x de <span appTextHighlight class="text-7xl">R$ 6,99</span></span>
+				<span class="text-center">ou <span class="font-bold text-2xl">R$ 69,99</span> à vista</span>
 			</div>
 			<a class="mt-4" appActionButton>COMECE SUA JORNADA!</a>
 		</div>

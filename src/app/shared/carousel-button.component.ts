@@ -8,7 +8,7 @@ import { faChevronCircleLeft, faChevronCircleRight } from '@fortawesome/free-sol
 	template: `
 		@if(icon(); as icon){
 		<button [class]="'transition-colors ' + color()" (click)="clickEvent.emit($event)">
-			<fa-icon appTextHighlight class="text-2xl " [icon]="icon"></fa-icon>
+			<fa-icon appTextHighlight class="text-2xl" [icon]="icon"></fa-icon>
 		</button>
 		}
 	`,

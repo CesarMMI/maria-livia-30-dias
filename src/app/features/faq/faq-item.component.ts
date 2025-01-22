@@ -6,8 +6,8 @@ import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 	selector: 'app-faq-item',
 	imports: [FontAwesomeModule],
 	template: `
-		<div class="flex gap-2" (click)="opened = !opened">
-			<fa-icon [icon]="iconChevron" [class.active]="opened" />
+		<div class="flex items-start gap-2 cursor-pointer">
+			<fa-icon class="inline" [icon]="iconChevron" [class.active]="opened" />
 			<span>{{ question }}</span>
 		</div>
 		<div class="item" [class.active]="opened">
@@ -30,4 +30,8 @@ export class FaqItemComponent {
 
 	opened = false;
 	iconChevron = faChevronDown;
+
+	@HostListener('click') onClick() {
+		this.opened = !this.opened;
+	}
 }
