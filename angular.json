@@ -58,7 +58,7 @@
 					},
 					"configurations": {
 						"production": {
-							"baseHref": "maria-livia-30-dias",
+							"baseHref": "/maria-livia-30-dias/",
 							"budgets": [
 								{
 									"type": "initial",
