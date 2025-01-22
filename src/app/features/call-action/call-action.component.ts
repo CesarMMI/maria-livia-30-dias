@@ -19,13 +19,11 @@ import { AsyncPipe } from '@angular/common';
 					<li>Cras tincidunt lacus mi, eu sagittis metus cursus non.</li>
 					<li>Quisque ut velit nisi. Nulla ex justo, molestie ut accumsan nec</li>
 					<li>Commodo non metus.</li>
-					<li>Aliquam blandit auctor ex et aliquet.</li>
-					<li>Sed justo augue, finibus sed finibus nec, auctor non lorem.</li>
 				</ul>
 			</div>
 			<div class="grid gap-2">
 				<span class="text-2xl text-center">De <span class="line-through font-bold">R$ 200,00</span> por apenas</span>
-				<span class="text-center text-neutral-400">10x de <span appTextHighlight class="text-7xl">R$ 6,99</span></span>
+				<span class="text-center text-neutral-400">10x de <span appTextHighlight class="text-6xl">R$ 6,99</span></span>
 				<span class="text-2xl text-center">ou <span class="font-bold">R$ 66,99</span> à vista</span>
 			</div>
 			@if(countdown$ | async; as countdown){
