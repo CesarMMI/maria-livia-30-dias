@@ -15,7 +15,7 @@ import { AsyncPipe } from '@angular/common';
 			>
 			<div class="mx-auto">
 				<span class="text-2xl">O que você vai receber:</span>
-				<ul class="text-base list-disc ml-8 mt-2 text-neutral-400">
+				<ul class="text-base list-disc ml-6 mt-2 text-neutral-400">
 					<li>Cras tincidunt lacus mi, eu sagittis metus cursus non.</li>
 					<li>Quisque ut velit nisi. Nulla ex justo, molestie ut accumsan nec</li>
 					<li>Commodo non metus.</li>
@@ -27,14 +27,14 @@ import { AsyncPipe } from '@angular/common';
 				<span class="text-2xl text-center">ou <span class="font-bold">R$ 66,99</span> à vista</span>
 			</div>
 			@if(countdown$ | async; as countdown){
-			<div class="grid gap-2">
-				<span class="text-neutral-400 text-center">Tempo Restante</span>
+			<div class="grid gap-1">
+				<span class="text-neutral-400 text-center text-sm">Tempo Restante</span>
 				<div class="flex items-center gap-3 justify-center font-bold">
-					<div class="bg-neutral-950 p-4 rounded-lg text-3xl">{{ countdown.hours }}</div>
+					<div class="bg-neutral-950 p-4 rounded-lg text-2xl">{{ countdown.hours }}</div>
 					<span>:</span>
-					<div class="bg-neutral-950 p-4 rounded-lg text-3xl">{{ countdown.minutes }}</div>
+					<div class="bg-neutral-950 p-4 rounded-lg text-2xl">{{ countdown.minutes }}</div>
 					<span>:</span>
-					<div class="bg-neutral-950 p-4 rounded-lg text-3xl">{{ countdown.seconds }}</div>
+					<div class="bg-neutral-950 p-4 rounded-lg text-2xl">{{ countdown.seconds }}</div>
 				</div>
 			</div>
 			}
