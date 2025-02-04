@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
-import { CallActionComponent } from './features/call-action/call-action.component';
 import { AutorComponent } from './features/autor/autor.component';
 import { BeneficiosComponent } from './features/beneficios/beneficios.component';
 import { CallActionMiniComponent } from './features/call-action-mini/call-action-mini.component';
+import { CallActionComponent } from './features/call-action/call-action.component';
 import { DepoimentosComponent } from './features/depoimentos/depoimentos.component';
 import { FaqComponent } from './features/faq/faq.component';
 import { HeroComponent } from './features/hero/hero.component';

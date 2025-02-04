@@ -35,7 +35,7 @@ import { InViewDirective } from '../../shared/in-view.directive';
 				/>
 			</div>
 			<div class="grid p-4">
-				<span class="text-2xl">Conheça a <span appTextHighlight class="teste">MARIA LIVIA</span>,</span>
+				<span class="text-xl">Conheça a <span appTextHighlight class="teste">MARIA LIVIA</span></span>
 				<span>Especialista por Trás do Método</span>
 				<p class="text-sm text-justify text-neutral-400 mt-2 mb-6">
 					Após superar desafios pessoais e conquistar resultados impressionantes, Maria Livia dedica sua vida a ajudar outras
