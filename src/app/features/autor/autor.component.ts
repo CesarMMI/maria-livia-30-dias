@@ -68,7 +68,7 @@ import { InViewDirective } from '../../shared/in-view.directive';
 	styleUrl: './autor.component.scss',
 })
 export class AutorComponent extends CarouselDirective {
-	override items = ['images/autor3.jpg', 'images/autor1.jpg', 'images/autor2.jpg'];
+	override items = ['images/autor3.jpg', 'images/autor4.jpeg', 'images/autor1.jpg', 'images/autor2.jpg'];
 	iconInstagram = faInstagram;
 	iconWhatsapp = faWhatsapp;
 	iconFacebook = faFacebook;

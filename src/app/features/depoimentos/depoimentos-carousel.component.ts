@@ -9,7 +9,7 @@ import { DepoimentosCarouselItemComponent } from './depoimentos-carousel-item.co
 	imports: [CarouselButtonComponent, DepoimentosCarouselItemComponent, NgFor],
 	template: `
 		<app-carousel-button side="left" (clickEvent)="onPrev()"></app-carousel-button>
-		<div class="relative w-full aspect-[3/4] overflow-hidden mx-auto max-w-xl">
+		<div class="relative w-full max-w-sm aspect-[9/16] overflow-hidden ">
 			<div
 				*ngFor="let item of items; let i = index"
 				[class.active]="currentIndex === i"
@@ -27,10 +27,12 @@ import { DepoimentosCarouselItemComponent } from './depoimentos-carousel-item.co
 })
 export class DepoimentosCarouselComponent extends CarouselDirective {
 	override items: string[] = [
+		'images/depoimento5.jpeg',
+		'images/depoimento6.jpeg',
+		'images/depoimento7.jpeg',
 		'images/depoimento3.jpeg',
-		'images/depoimento4.jpeg',
 		'images/depoimento1.jpeg',
 		'images/depoimento2.jpeg',
-		'images/depoimento5.jpeg',
+		'images/depoimento4.jpeg',
 	];
 }

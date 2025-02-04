@@ -21,7 +21,8 @@ import { BehaviorSubject, interval, Subject, switchMap, takeUntil, tap } from 'r
 			active:bg-amber-800
   		`,
 		'[class.animate-grow]': 'inGrowAnimation',
-		href: 'https://wa.me/5511966374958?text=Ol%C3%A1%20Mundo%21',
+		href:
+			'https://wa.me/5511966374958?text=Acabei%20de%20clicar%20no%20bot%C3%A3o%20%22Garanta%20Sua%20Vaga%22%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20%5Bnome%20do%20curso%2C%20evento%20ou%20servi%C3%A7o%5D.%20Poderiam%20me%20passar%20os%20detalhes%20sobre%20valores%2C%20formas%20de%20pagamento%20e%20pr%C3%B3ximos%20passos%20para%20confirmar%20minha%20inscri%C3%A7%C3%A3o%3F',
 		target: '_blank',
 	},
 })
